@@ -1,314 +1,314 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: sans-serif;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
-.parent{
-    margin-top: 120px;
+body {
+  background-color: #f9fafb;
+  /* background-color: aquamarine; */
+}
+/* background-image: url(./images/home.png); */
+/* .header {
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  gap: 20px;
+} */
+.h2 {
+  padding-left: 60px;
+  margin-top: 20px;
+}
+
+.parent {
+  margin-top: 120px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  flex-grow: 0;
+  flex-basis: auto;
+  flex-shrink: 1;
+}
+.bank {
+  font-size: 3em;
+  line-height: 1.5;
+}
+.image-phone {
+  display: none;
+}
+.form { 
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(59, 200, 137);
+  padding: 5px 10px !important;
+  border-radius: 35px;
+  width: 90%;
+}
+.form > input {
+  /* width: 70%; */
+  height: 40px;
+  border-radius: 35px;
+  /* padding: 30px; */
+  font-size: 13px;
+  background-color: transparent ;
+}
+
+.button {
+  color: white;
+  background-color: rgb(59, 200, 137);
+  border: none;
+  width: 25%;
+  height: 50px;
+  border-radius: 30px;
+}
+
+.form > input {
+  width: 75%;
+  border: none;
+  padding: 10px 5px;
+}
+.button:hover {
+  cursor: pointer;
+  filter: invert(100%);
+}
+
+.build {
+  margin-top: 200px;
+  background-image: url(./images/cta.png);
+  height: 85vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.form1{
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    flex-grow: 0;
-    flex-basis: auto;
-    flex-shrink: 1;
+    align-items: center;
+    border: 1px solid rgb(59, 200, 137);
+    border-radius: 35px;
+    width: 50%;
+    margin: auto;
+    padding: 0px 5px;
 }
-.h2{
-    padding-left: 60px;
+.form1 > input {
+    width: 80%;
+  height: 70px;
+  padding: 30px;
+  font-size: 15px;
+  border: none;
+  background-color: transparent;
 }
-.bank{
-    font-size: 3em; 
-    line-height: 1.5;
+.button1 {
+  color: white;
+  background-color: rgb(59, 200, 137);
+  border: none;
+  width: 20%;
+  height: 55px;
+  border-radius: 30px;
 }
-.header{
+.button1:hover {
+  cursor: pointer;
+  filter: invert(100%);
+}
+.scroll {
+  background-image: url(./images/galley.png);
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 80px;
+}
+
+.carousel {
+  overflow-x: scroll;
+  display: flex;
+  gap: 100px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-top: 50px;
+}
+
+footer {
+  background-image: url(./images/Footer.png);
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 100px;
+}
+.product:hover {
+  color: brown !important;
+}
+
+.row {
+  line-height: 1.6;
+}
+.foot {
+  font-size: 20px;
+}
+.create {
+  margin-top: 150px;
+}
+
+@media screen and (min-width: 950px) and (max-width: 1199px) {
+  body {
+    width: 95%;
+  }
+  .header {
     background-image: url(./images/home.png);
-    height: 70vh;
+    height: 140vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    gap: 20px;
-    
-}
-.image-phone{
-    display: none;
-}
-
-.form > input{
-    width: 400px;
-    height: 70px;
-    border-radius: 35px;
-    border: 1px solid rgb(59, 200, 137);
-    padding: 20px;
-}
-.button{
-    color: white;
-    background-color: rgb(59, 200, 137);
-    border: none;
-    width: 150px;
-    height: 60px;
-    border-radius: 30px;
-    /* margin-left: -160px; */
-    position: relative;
-    right: 160px;
-    
-}
-.button:hover{
-    cursor: pointer;
-    filter:invert(100%);
-}
-
-.build{
-    margin-top: 200px;
-    background-image: url(./images/cta.png);
-    height: 85vh;
-    background-repeat: no-repeat;
-     background-size: cover; 
-    background-position: center; 
-
-}
-.form1 > input{
-    margin-top: 150px;
-    width: 500px;
-    height: 70px;
-    border-radius: 35px;
-    border: 1px solid rgb(59, 200, 137);
-    padding: 30px;
-    font-size: 15px;
-}
-.button1{
+    width: 100%;
+  }
+  .button {
     color: white;
     background-color: rgb(59, 200, 137);
     border: none;
     width: 100px;
     height: 60px;
     border-radius: 30px;
-    margin-left: -110px;
-    
+  }
+  .scroll {
+    height: auto;
+    width: 100%;
+  }
+  .foot {
+    font-size: 19px;
+  }
 }
-.button1:hover{
-    cursor: pointer;
-    filter:invert(100%);
-}
-.scroll{
-    background-image: url(./images/galley.png);
-    height: 90vh;
+
+@media screen and (max-width: 900px) {
+  body {
+    width: 100%;
+  }
+  .parent {
+    display: block;
+    width: 100%;
+    /* margin-left: 30px; */
+  }
+  .bank {
+    font-size: 2.3em;
+  }
+  .image-web {
+    display: none;
+  }
+  .image-phone {
+    display: block;
+    width: 80%;
+  }
+  .header {
+    background-image: url(./images/hero.png);
+    width: 100%;
+    height: auto;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    margin-top: 80px;
-}
-
-
-.carousel{
-    overflow-x: scroll;
+    /* background-position: center; */
+    background-position-y: 50px;
+    background-position-x: -40px;
+  }
+  .form {
     display: flex;
-    gap: 100px;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding-top: 50px;
-}
+    align-items: center;
+    padding: 0 !important;
+  }
+  .form > input {
+    width: 70%;
+    height: 40px;
+    border-radius: 35px;
+    padding: 30px;
+    font-size: 13px;
+  }
 
-footer{
-    background-image: url(./images/Footer.png);
-    height: 70vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin-top: 100px;
-}
-.product:hover {
-color: brown !important;
-}
-
-.row{
-    line-height: 1.6;
-}
-.foot{
-    font-size:20px;
-}
-.create{
-    margin-top:150px;
-}
-
-
-
-@media screen and (min-width:950px) and (max-width:1199px) {
-    body{
-        width: 95%;
-    }
-    .header{
-        background-image: url(./images/home.png);
-        height: 140vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        
-    }
-    .button{
-        color: white;
-        background-color: rgb(59, 200, 137);
-        border: none;
-        width: 100px;
-        height: 60px;
-        border-radius: 30px;
-        /* margin-left: -60px; */
-        position: relative;
-        left:290px;
-        bottom: 65px ;
-    }
-    .scroll{
-        height: auto;
-        width: 100%;
-    }
-    .foot{
-        font-size: 19px;
-    }
-}
-
-@media screen and (max-width:900px) {
-    body{
-        width: 100%;
-        /* overflow-x: hidden; */
-    } 
-    .parent{
-        display: block;
-        width: 100%;
-        margin-left: 30px;
-    
-    }
-    .bank{
-        font-size: 2.5em;
-    }
-    .image-web{
-        display: none;
-    }
-    .image-phone{
-        display:block;
-        width: 80%;
-    }
-    .header{
-        background-image: url(./images/hero.png);
-        width: 100%;
-        height: auto;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    .form > input{
-        width: 90%;
-        height: auto;
-        border-radius: 35px;
-        border: 1px solid rgb(59, 200, 137);
-        padding: 30px;
-        font-size: 13px;
-    }
-
-.button{
+  .button {
     color: white;
     background-color: rgb(59, 200, 137);
     border: none;
     width: 25%;
-    height: 60px;
+    /* height: 60px; */
     border-radius: 30px;
-    /* margin-left: -160px; */
-    position: relative;
-    left: 300px;
-    bottom:70px ;
-}
-  
-    .build{
-        margin-top: 200px;
-        background-image: url(./images/crea.png);
-        height:auto;
-        width: 100%;
-        background-repeat: no-repeat;
-         background-size: cover; 
-        background-position: center; 
-    
-    }
-    .scroll{
-        height: auto;
-        width: 100%;
+  }
 
-    }
-    footer{
-        background-image: url(./images/Footer1.png);
-        height:auto;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        margin-top: 100px;
-    }
-    .fintech{
-        margin-top: -100px !important;
-        margin-bottom: 50px;
-    }
-    /* .carousel{
+  .build {
+    margin-top: 200px;
+    /* background-image: url(./images/crea.png); */
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .scroll {
+    height: auto;
+    width: 100%;
+  }
+  footer {
+    background-image: url(./images/Footer1.png);
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 0px;
+  }
+  .fintech {
+    margin-top: 10px !important;
+    margin-bottom: 50px;
+  }
+  /* .carousel{
         overflow-x: scroll !important;
         width: 100%;
     
     } */
-    .carousel > img{
-        width: 300px !important;
-        height: auto !important;
-    }
-    .graph{
-        padding-left: 0px!important;
-    }
-}    
+  .carousel > img {
+    width: 300px !important;
+    height: auto !important;
+  }
+  .graph {
+    padding-left: 0px !important;
+  }
+}
 
-@media screen and (max-width:600px) {
-    body{
-        /* overflow-x: hidden; */
-        width: 95%;
-    } 
-    /* .bank{
+@media screen and (max-width: 600px) {
+  /* .bank{
         font-size: 2em; 
     } */
-    /* .form > input{
+  /* .form > input{
         width: 260px !important;
         height: 60px;
         padding: 20px;
         font-size: 13px;
     } */
-    /* .button{
+  /* .button{
         width: 90px;
         height: 50px;
         margin-left: -100px;    
         
     } */
-    .button{
-        color: white;
-        background-color: rgb(59, 200, 137);
-        border: none;
-        width: 100px;
-        height: 60px;
-        border-radius: 30px;
-        /* margin-left: -160px; */
-        position: relative;
-        left: 190px;
-        bottom:70px ;
-    }
+  .button {
+    color: white;
+    background-color: rgb(59, 200, 137);
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+  }
+  .form1{
+    width: 100%;
+    height: 55px;
+  }
 
-    
-    .form1 > input{
-        width: 300px;
-        height: 60px;
-        padding: 30px;
-        font-size: 15px  !important;
-    }
-    i
-    .button1{
-        width: 90px;
-        height: 50px;
-        margin-left: -100px;
-        
-    }
-    /* .carousel{
-        overflow-x: scroll !important;
-    }     */
+  .form1 > input {
+    width: 90%;
+    font-size: 15px !important;
+  }
 
-    
+  .button1 {
+    width: 52%;
+    font-size: 10px;
+    margin-left: 50px;
+    height: 50px;
+  }
 }
+
